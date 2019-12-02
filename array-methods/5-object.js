@@ -1,5 +1,6 @@
 // 1. Write a JavaScript program to list the properties and values of a JavaScript object. (Object.keys)
-
+Object.keys(student);
+Object.values(student);
 
 
 // 2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.
@@ -9,7 +10,11 @@ var student = {
   rollno : 12
 };
 
-
-
+function deleteit(student){
+  delete student.rollno;
+  console.log(student);
+}
+deleteit(student);
 
 // 3. Write a function to get the length of an object.
+Object.keys(student).length;
